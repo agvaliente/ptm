@@ -1,0 +1,13 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: remedy-zabbix-ws-claim
+  namespace: ptm-des
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 200Mi
+  volumeName: remedy-zabbix-ws
+

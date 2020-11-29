@@ -1,0 +1,15 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: remedy-zabbix-ws
+  labels:
+    type: local
+  namespace: ptm-des
+spec:
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/data2/zabbixlogs"
+
